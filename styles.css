@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.heading-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.box1{
+    /* padding: 20px 380px 0px 380px; */
+    border-radius: 3.615px;
+    border: 0.904px solid #C8C8C8;
+    background: #FFF;
+    /* width: 50%;
+    margin-left: 25%; */
+    margin-bottom: 20px;
+}
+
+.f1{
+    display: flex;
+    position: relative;
+    padding: 20px 0px 0px 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    background: #ffffff;
+    transition: height 0.3s ease-in-out; /* Add transition for smooth height change */
+    height: 60px; /* Set initial height */
+    overflow: hidden;
+}
+
+.f1:hover {
+    background: #F4FBF9;
+    height: 160px; /* Change height on hover */
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid green; /* Set the border color */
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+/* Customize the appearance of the checked radio button */
+input[type="radio"]:checked {
+    border-color: green; /* Change the border color for the checked state */
+    background-color: green; /* Fill the radio button with green when checked */
+}
+
+
+
+
+
+
+
+.radio-label {
+    /* ... other styles ... */
+    gap: 12px;
+    display: inline-flex;
+    position: relative;
+    padding: 20px 0px 0px 20px;
+    height: 40px;
+    transition: height 0.3s ease-in-out;
+    pointer-events: auto; /* Enable pointer events */
+}
+
+.radio-label:hover {
+    height: 160px;
+    pointer-events: none; /* Disable pointer events on hover */
+}
+
+.text1{
+    color: #000;
+font-family: Inter;
+font-size: 14.461px;
+font-style: normal;
+font-weight: 00;
+line-height: normal;
+}
+
+.text2{
+    color: #000;
+font-family: Inter;
+font-size: 14.461px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+.off{
+    position: absolute;
+    padding: 0px 0px 0px 80%;
+}
+
+
+
+.text-color{
+    color: #007F61;
+font-family: Inter;
+font-size: 12.653px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.second{
+    padding: 0px 0px 10px 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc; /* Replace with your desired icon background */
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.text-class{
+    color: #000;
+font-family: Inter;
+font-size: 9.942px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+/* footer code  */
+
+
+.footer{
+    /* border-radius: 3.615px; */
+    /* border: 0.904px solid #C8C8C8; */
+    display: flex;
+    background: #FFF;
+   
+    margin-bottom: 20px;
+
+}
+
+
+.foo-text{
+    width: 100%;
+    color: #007F61;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foo-last{
+    width: 100%;
+    text-align: end;
+  
+}
+
+.main{
+    margin: auto;
+    width: 40%;
+   
+}
+
+.cut{
+    padding-left: 30%;
+    color: #9F9F9F;
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.card{
+    color: #FFF;
+    width: 100%;
+    /* margin-left: 25%; */
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 4px 4px 4px 0px;
+background: #007F61;
+/* width: 341px; */
+height: 48px;
+}
+.txt-color-btn{
+    color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .heading-container {
+        padding: 20px; /* Reduce the heading container padding */
+    }
+
+    .f1 {
+        padding: 20px; /* Reduce the box1 padding */
+    }
+    .box1{
+        /* width: 90%; */
+        margin: 0px 20px 0px 20px;
+      
+        
+    margin-bottom: 10px;
+
+    }
+    .main{
+        width: 100%!important;
+    }
+    .radio-label{
+        gap: 12px;
+    }
+    .cut{
+        padding-left: 1%!important;
+        font-size: 10px;
+    }
+    .footer{
+        padding: 20px;
+    }
+
+    .second{
+        margin-top: 30px;
+    }
+}
